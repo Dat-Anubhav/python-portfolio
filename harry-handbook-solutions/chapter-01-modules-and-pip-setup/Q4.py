@@ -1,5 +1,7 @@
 '''Q4 :- Write a python program to print the contents of a directory using the os module.
- Search online for the function which does that'''
+ Search online for the function which does that
+ 
+ Q5: Add comments in the Q4 program. (Done below)'''
 
 import os
 
@@ -15,4 +17,4 @@ print(f"Contents of '{directory_path}':")
 
 for item in contents:
     print(item)
-# chapter 1 test has ended here Q5 which was label or add comments in the q4 program has also been done here  
+# chapter 1 test has ended here. Q5 (add comments in the Q4 program) has also been completed in this program.  
