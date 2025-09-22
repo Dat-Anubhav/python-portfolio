@@ -5,7 +5,9 @@ You are selected!
 <|Date|>
 ''' """
 
-# This program demonstrates how to use string replacement to fill a template with variables.
+"""
+Summary:-This program demonstrates how to use string replacement to fill a template with variables.
+"""
 
 # Option 1:taking user input
 # name = input("enter your name :- ")
