@@ -24,7 +24,6 @@ Summary:- This program can tell amount of energy required to heat a certain amou
           and what will be the  cost heating.
 """
 
-
 # taking user input to place the value in the fomula q = mCΔT.
 # where q = amount of energy required to heat the water, which we have to calculate
 # m=mass of the given water
@@ -49,4 +48,8 @@ print(f"\ntotal amount of energy require to heat a of {mass} grams of water to {
 # converting joules into kilowatt per hour and calculating the cost of heating the water
 cost=q/3600000*8.99
 
+# printing cost of boling water for coffee
 print(f"\nCost of electricity boiling {mass} grams of water for coffee = {cost} cents \n")
+
+# Greeting message
+print("HAVE NICE DAY :)\n")
