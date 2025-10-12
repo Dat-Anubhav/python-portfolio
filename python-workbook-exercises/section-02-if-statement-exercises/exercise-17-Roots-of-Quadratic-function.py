@@ -27,16 +27,18 @@ quadratic function may have 0, 1 or 2 real roots.\n")
 
 # asking user to input the values of a,b and c
 print("\nPlease enter the values of a, b and  c to find the roots of the quadratic functions :- \n")
-# try:
+try:
 
     # Taking user input for a,b and c
-a=float(input("\nPlease enter the value of  'a' in the function ="))
-b=float(input("\nPlease enter the value of  'b' in the function ="))
-c=float(input("\nPlease enter the value of  'c' in the function ="))
-# except ValueError:
-    # print("INVALID INPUT")
-    # exit()
-
+    a=float(input("\nPlease enter the value of  'a' in the function ="))
+    b=float(input("\nPlease enter the value of  'b' in the function ="))
+    c=float(input("\nPlease enter the value of  'c' in the function ="))
+except ValueError:
+    print("INVALID INPUT")
+    exit()
+if(a==b==c==0):
+    print("Devision by zero is not possible here")
+    exit()
 # Importing math module to calculate the √b2 − 4ac i.e discriminant. 
 import math
 
