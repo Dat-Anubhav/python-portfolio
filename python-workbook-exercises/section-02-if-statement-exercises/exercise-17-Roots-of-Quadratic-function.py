@@ -36,9 +36,14 @@ try:
 except ValueError:
     print("INVALID INPUT")
     exit()
-if(a==b==c==0):
-    print("Devision by zero is not possible here")
+
+# checking condition for a (a must not be a zero in a quadrsatic function) 
+if(a==0):
+    print(f"\na i.e ({a}) cannot be zero in a quadratic function. By definition, \n\
+a quadratic function must be a second-degree polynomial, \n\
+meaning the highest exponent of the variable is 2.\n")
     exit()
+
 # Importing math module to calculate the √b2 − 4ac i.e discriminant. 
 import math
 
