@@ -47,8 +47,21 @@ if(m==1):
 # Checking conditions for February month
 elif(m==2):
     
-    if(y%100==0):
-        print("\nEntered date {y}-{m}-{d} is not a leap year\n")
+    if(y%400==0):
+        print(f"\nEntered date {y}-{m}-{d} is a leap year\n")
+        
+        if(d<=28):
+              D=d+1
+              print(f"\nEntered date {y}-{m}-{d}, Next day = {y}-{m}-{D}\n")
+        
+        elif(d==29):
+            M=m+1
+            print(f"\nEntered date {y}-{m}-{d}, Next day = {y}-{M}-{1}\n")
+        else:
+            print("\nINVALID DAY INPUT\n")    
+    
+    elif(y%100==0):
+        print(f"\nEntered date {y}-{m}-{d} is not a leap year\n")
            
         if(d==29):
             print(f"\nEntered date {y}-{m}-{d}: Invalid day input\n")      
@@ -71,7 +84,7 @@ elif(m==2):
             print("\nINVALID DAY INPUT\n")        
     
     elif(y%4==0):
-        print("\n\nEntered date {y}-{m}-{d} is a leap year")
+        print(f"\n\nEntered date {y}-{m}-{d} is a leap year")
         
         if(d<=28):
               D=d+1
@@ -83,19 +96,6 @@ elif(m==2):
         else:
             print("\nINVALID DAY INPUT\n")
 
-    elif(y%400==0):
-        print("\nEntered date {y}-{m}-{d} is a leap year\n")
-        
-        if(d<=28):
-              D=d+1
-              print(f"\nEntered date {y}-{m}-{d}, Next day = {y}-{m}-{D}\n")
-        
-        elif(d==29):
-            M=m+1
-            print(f"\nEntered date {y}-{m}-{d}, Next day = {y}-{M}-{1}\n")
-        else:
-            print("\nINVALID DAY INPUT\n")    
-    
     else:
         print("\nEntered date {y}-{m}-{d} is not a leap year\n")
            
