@@ -13,7 +13,7 @@ def_dic['b'].append(2) # Add 2 to the list for key 'b'
 def_dic['c'].append(3) # Add 3 to the list for key 'c'
 
 # Display the contents of the default dictionary
-print(def_dic)
+print("\n",def_dic,"\n")
 
 '''This code creates a special kind of dictionary that gives you an empty list every time you use a 
 new key, so you don't get errors.
