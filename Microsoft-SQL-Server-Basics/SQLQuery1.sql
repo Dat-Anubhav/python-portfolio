@@ -1,9 +1,11 @@
 
+-- Creating Database
+
 Create database Our_employee_details
 
 use Our_employee_details
 
-
+-- Table 1 
 CREATE TABLE Employees
 (EmployeeID INT PRIMARY KEY,
 Firstname VARCHAR(30),

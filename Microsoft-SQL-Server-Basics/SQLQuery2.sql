@@ -1,3 +1,6 @@
+
+-- Practicing to Select statement
+
 use Our_employee_details
 
 Select * From Employees
@@ -5,8 +8,6 @@ Select * From Employees
 Select Firstname from Employees
 
 Select Firstname,Lastname from Employees
-
-Select EmployeesID(5) from Employees
 
 Select Firstname,lastname,Salary from Employees
 
