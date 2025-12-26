@@ -49,3 +49,12 @@ avg(Quantity) [Average Quantity Sold],
 avg(TotalAmount) [Average Amount]
 from dbo.Sales
 group by ProductID
+
+--Sum of Quantity, sum of amount, avg of quantity & avg of amount for distinct combinations of ProductID & storeid
+Select ProductID,StoreID, 
+sum(Quantity) as [Total_quantity],
+sum(TotalAmount) as [Product_TotalAmount],
+avg(Quantity) as [Average_Quantity],
+avg(TotalAmount) as [Average_TotalAmount]
+from Sales
+Group by ProductID,StoreID
