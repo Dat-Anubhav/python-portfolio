@@ -58,4 +58,25 @@ Select * from Employees_US where LastName like '[a-l]%'
 Select * from Employees_US where FirstName not like '%o%'
 
 --10) Find Employees whose Last Name ends with 'a' and is exactly 5 characters long.
-Select
+Select * from Employees_US where LastName like '____a'
+
+--11) Find Employees whose Department starts with 'Mar' and ends with 'ing'.
+Select * from Employees_US where Department like 'mar%ing'
+
+--12) Find Employees whose First Name has an 'a' in the third position.
+Select * from Employees_US where FirstName like '__a%'
+
+--13) Find Employees whose Last Name starts with 'Br' or 'Bl'.
+Select * from Employees_US where LastName LIKE '[BrBl]%'
+
+--Same thing can also be written as 
+Select * from Employees_US where LastName like 'Br%' or LastName like 'Bl%'
+
+--14) Find Employees whose First Name starts with a vowel.
+Select * from Employees_US where FirstName like '[aeiou]%'
+
+--15) Find Employees whose First Name does not start with a consonant.
+Select * from Employees_US where FirstName not like '[^aeiou]%' --In a SQL Server LIKE pattern, the ^ inside square brackets means “NOT these characters.”
+
+--16) Find Employees whose First Name starts with a consonant.
+Select * from Employees_US where FirstName like '[^aeiou]%'
