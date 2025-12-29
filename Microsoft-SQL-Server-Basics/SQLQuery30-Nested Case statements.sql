@@ -29,8 +29,6 @@ end as [Category]
 from Products
 
 ----Test
-
-
 Select
 *,
 case

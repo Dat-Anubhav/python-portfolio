@@ -2,12 +2,7 @@
 --UNIQUE CONSTRAINT--
 --It ensures that a column consists of unique values
 
---Case 1 : when the table already exists
-alter table test_unique
-add unique (lastname)
-
-
---Case 2: We need to create a table
+--Case 1: We need to create a table
 Create table test_unique1(
 Sid int unique,
 age tinyint not null,
@@ -25,7 +20,7 @@ values(1,23,'Rishu','Srivastav')
  
 --As expected it throws an error:- Violation of UNIQUE KEY constraint 'UQ__test_uni__CA1E5D79C10E7E23'. Cannot insert duplicate key in object 'dbo.test_unique1'. The duplicate key value is (1)
 
---case 2:- whe table already exists
+--case 2:- when the table already exists
 --altering age column into unique and nullable
 
 alter table test_unique1
